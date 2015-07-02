@@ -35,11 +35,7 @@
         #statusTotal{width:25px;text-align:left;background:none;border:0px;}
         .boxShadow{-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);-o-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);box-shadow: 0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57); }
         .transOrgin{-moz-transform-origin: 0 0;-o-transform-origin: 0 0;-webkit-transform-origin: 0px 0px;-ms-transform-origin: 0 0;}
-        #notesButton, #noteDisplay{cursor:pointer;margin:0;position:relative;display:block;color:#666;text-shadow:0px 1px 0px rgba(255,255,255,0.59);background:#ececec;padding:5px;outline:none;border:1px solid #d8d8d8;border-bottom:1px solid #ccc;border-radius:3px;overflow:visible;}
         .boxShadow:hover {color:#696969;text-shadow:0px 1px 0px rgba(255,255,255,0.53);border: 1px solid #d2d2d2;border-bottom:1px solid #d8d8d8;border-radius:3px;-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);-moz-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);-o-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);box-shadow: 0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);}
-        #panel{left:0px;top:0px;height:100%;width:250px;display:none;}
-        #notepanel{left: 0px;top:0px;height:100%;width:240px;}
-        #noteDisplay{padding:10px;margin:9px;color:#707070;background-color:#F7F7F7;left:0px;top:0px;height:100%;cursor:default;width:210px;font-family:Arial;font-size:12px;font-weight:normal;overflow-y:auto;overflow-x:hidden;}
         #loadingImg{height:100%;width:100%;display:block;}
         #loadingImg div{left:50%;top:50%;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:4px;background-color:rgba(255,255,255,.8);opacity:0.8;}
         #inImg{height:80%;width:80%;margin:10%;}
@@ -68,25 +64,6 @@
     </div>
     <div id="loadingImg" style="">
         <div><img id="inImg" src="data/player/pre.gif" alt="loading"/></div>
-    </div>
-    <div id="panel">
-        <div style="left:0px;top:0px;height:100%;width:250px;background-color:#ECECEC;">
-            <div id="notepanel">
-                <div id="presInfo" style="left:0px;top:0px;height:116px;width:230px;margin:10px;background-color:white;overflow-y:hidden;padding:5px;overflow:hidden;position:relative;display:none">
-                    <div  id="profilePic" style="background-color:#E2E2E2;height:90px;width:auto;position:relative;margin-bottom:10px;text-align:center;">
-                        <img src="" id="PrePicLoader" style="width: auto;height:80px;padding:5px;overflow-y:hidden;position:relative;" alt=""/>
-                    </div>
-                    <div  id="profileName" style="display: block; position: relative;width:184px;"></div>
-                    <button onclick="ShowInfo(this)" style="margin-top:-23px;position:absolute;right:5px;width:25px;top:124px;">+</button>
-                    <div id="profiles" style="width:96%;padding-top:4%;font-size:15px;position:relative;"></div>
-                    <div id="socialLinks" style="width:96%;padding:15px;position:relative;margin-top:-20px;"></div>
-                </div>
-                <div id="slideNote" style="left:0px;top:10px;height:100%;width:250px;">
-                    <div style="background-color:rgb(205,205,205);width:221px;height:24px;margin-left:10px;padding:5px;color:rgb(92,92,92);font-size:small;font-family:Arial;">Slide Note:</div>
-                    <div class="boxShadow" id="noteDisplay" style="height: 577px;top:15px;"></div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 </body>
