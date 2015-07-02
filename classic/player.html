@@ -35,7 +35,7 @@
         #statusTotal{width:25px;text-align:left;background:none;border:0px;}
         .boxShadow{-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);-o-box-shadow:0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57);box-shadow: 0px 2px 2px rgba(0,0,0,0.027), inset 0px 1px 0px rgba(255,255,255,0.69), inset 0px -1px 0px rgba(0,0,0,0.0187), inset 0px 15px 14px rgba(255,255,255,0.57); }
         .transOrgin{-moz-transform-origin: 0 0;-o-transform-origin: 0 0;-webkit-transform-origin: 0px 0px;-ms-transform-origin: 0 0;}
-        #notesButton, #noteDisplay{cursor:pointer;margin:0;position:relative;display:block;color:#666;text-shadow:0px 1px 0px rgba(255,255,255,0.59);background:#ececec;padding:5px;outline:none;border:1px solid #d8d8d8;border-bottom:1px solid #ccc;border-radius:3px;overflow:visible;}
+        #notesButton{display: none;}, #noteDisplay{cursor:pointer;margin:0;position:relative;display:block;color:#666;text-shadow:0px 1px 0px rgba(255,255,255,0.59);background:#ececec;padding:5px;outline:none;border:1px solid #d8d8d8;border-bottom:1px solid #ccc;border-radius:3px;overflow:visible;}
         .boxShadow:hover {color:#696969;text-shadow:0px 1px 0px rgba(255,255,255,0.53);border: 1px solid #d2d2d2;border-bottom:1px solid #d8d8d8;border-radius:3px;-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);-moz-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);-o-box-shadow:0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);box-shadow: 0px 1px 0px rgba(255,255,255,0.58), inset 0px 1px 6px rgba(0,0,0,0.07), inset 0px -15px 14px rgba(255,255,255,0.20);}
         #panel{left:0px;top:0px;height:100%;width:250px;display:none;}
         #notepanel{left: 0px;top:0px;height:100%;width:240px;}
@@ -49,7 +49,8 @@
 <div id="player" style="height:0px;width:0px;overflow:hidden;">
     <div id="toolbar" style= "height:50px;bottom:0px;width:100%;z-index:50;overflow: hidden;">
         <div id="ddiv" style="height:50px;width:100%;opacity:1;">
-            <button class="boxShadow" id="notesButton" onClick="sHp()" style="display: none;">Menu</button>
+            <div id="notesButton"></div>
+            
             <div id="logo" style="width:20%;height:40px;left:75px;top:4px;overflow:hidden"></div>
             <div id="time"><span id="times">00:00</span></div>
             <div id="progressContainer"><div id="progress"><div id="Bar"></div></div></div>
